@@ -208,7 +208,7 @@ with st.container():
 
     VIDEO_URL = st.text_input(
         "Video URL (YouTube / direct MP4 link)",
-        value="https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+        value="http://www.youtube.com/watch?v=DnKpnojwz2M",
         placeholder="https://...",
         label_visibility="collapsed",
     )
