@@ -148,16 +148,22 @@ html, body, [class*="css"] {
 /* ─ Inputs & buttons ─ */
 .stTextInput > div > div > input,
 .stTextArea > div > div > textarea {
-    background: #0e1a2e !important;
-    border: 1px solid #1e3256 !important;
-    color: #dce3f0 !important;
+    background: #e8ecf0 !important;
+    border: 1px solid #b0bdd0 !important;
+    color: #000000 !important;
     border-radius: 5px !important;
     font-family: 'Source Sans 3', sans-serif !important;
 }
 .stTextInput > div > div > input:focus,
 .stTextArea > div > div > textarea:focus {
     border-color: #3a7bd5 !important;
-    box-shadow: 0 0 0 2px rgba(58,123,213,.18) !important;
+    box-shadow: 0 0 0 2px rgba(58,123,213,.25) !important;
+}
+/* ─ Input & textarea labels ─ */
+.stTextInput label,
+.stTextArea label {
+    color: #ffffff !important;
+    font-weight: 600 !important;
 }
 .stButton > button {
     background: linear-gradient(135deg, #1a4d8c, #2f6dbf) !important;
@@ -208,7 +214,7 @@ with st.container():
 
     VIDEO_URL = st.text_input(
         "Video URL (YouTube / direct MP4 link)",
-        value="http://www.youtube.com/watch?v=DnKpnojwz2M",
+        value="https://www.youtube.com/watch?v=DnKpnojwz2M",
         placeholder="https://...",
         label_visibility="collapsed",
     )
